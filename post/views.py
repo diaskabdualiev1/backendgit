@@ -50,6 +50,7 @@ def index(request):
         'follow_status': follow_status,
         'profile': profile,
         'all_users': all_users,
+        # 'followers': followers,
         # 'users_paginator': users_paginator,
     }
     return render(request, 'index.html', context)
