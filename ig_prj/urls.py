@@ -18,8 +18,6 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-# from elements import views as e_views
-# from authusers import views as auth_views
 from authy.views import UserProfile, follow, following, followers
 
 urlpatterns = [
