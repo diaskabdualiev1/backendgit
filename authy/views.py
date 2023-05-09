@@ -134,4 +134,14 @@ def following(request, username):
     context = {
         'followings': followings
     }
-    return render(request, 'temp.html', context)
+    return render(request, 'followings.html', context)
+
+def followers(request, username):
+    user = get_object_or_404(User, username=username)
+    followings = []
+    for x in Follow.objects.filter(following=user):
+        followings.append(User.objects.get(pk=x.follower.pk))
+    context = {
+        'followings': followings
+    }
+    return render(request, 'followings.html', context)
