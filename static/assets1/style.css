@@ -47,11 +47,13 @@
 
 /* General Styles */
 body {
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
+    background: url("./backendgit/static/assets2/images/sdubackground.png");
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 svg { display: block; }

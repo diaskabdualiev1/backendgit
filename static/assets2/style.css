@@ -11,6 +11,8 @@ html {
   box-sizing: border-box;
 }
 
+
+
 img {
   width: 100%;
   max-width: 100%;
@@ -22,7 +24,23 @@ a {
 }
 
 body {
-  background-color: #fafafa;
+    /* background-color: #fafafa;
+    position: absolute;
+    
+    left: 0px;
+    top: 0px; */
+  
+  background: url("./images/sdubackground.png");
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* filter: blur(5px); */
+
+
 }
 
 #wrapper {
